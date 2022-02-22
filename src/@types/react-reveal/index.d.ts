@@ -21,7 +21,7 @@ interface RevealProps {
    * See <a href="https://www.react-reveal.com/docs/cascade/">cascade docs</a>. Defaults to `false`. Optional.
    * @property {boolean}
    */
-  cascase?: boolean;
+  cascade?: boolean;
   /**
    * See <a href="https://www.react-reveal.com/docs/when/">collapse docs</a>. Defaults to `false`. Optional.
    *
@@ -124,6 +124,8 @@ interface RevealProps {
    * @property {boolean}
    */
   when?: boolean;
+
+  big?: boolean;
 }
 
 declare module 'react-reveal/Bounce' {
