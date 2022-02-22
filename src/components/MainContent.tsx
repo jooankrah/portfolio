@@ -32,7 +32,7 @@ export default function MainContent() {
 
       <TabPanel className='bg-black'>
         <div className=' flex h-screen flex-col items-center justify-center space-y-6 p-4'>
-          <Fade bottom big ssrFadeout>
+          <Fade left ssrFadeout>
             <div className='relative h-[300px] w-[300px] rounded-full'>
               <Image
                 className='rounded-full'
@@ -54,7 +54,7 @@ export default function MainContent() {
                 Jonathan Nsiah.
               </h4>
             </Typist>
-            <Fade left ssrFadeout>
+            <Fade bottom ssrFadeout>
               <div>
                 {/* <p className='text-gray-300 text-2xl text-center'>Hello! Akwaaba</p> */}
                 <div className='bg-black p-2 text-center opacity-80'>
