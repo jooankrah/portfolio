@@ -19,7 +19,7 @@ const links = [
 
 export default function Header() {
   return (
-    <header className='top-0 bg-[#04071d] px-6'>
+    <header className='sticky top-0 h-10 bg-[#04071d] px-6'>
       <div className='grid grid-cols-3 items-center justify-between'>
         {/**start menu items */}
         <div>

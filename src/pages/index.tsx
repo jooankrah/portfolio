@@ -14,10 +14,10 @@ export default function HomePage() {
         siteName='Jonathan Nsiah'
         description='Software Engineer | Personal Blog'
       />
-      <div className='h-full min-h-screen'>
+      <div className='h-screen'>
         {/**header */}
         <Header />
-        <main className='flex h-screen max-h-full bg-gray-200'>
+        <main className='top-10 flex h-[calc(100vh_-_40px)] bg-gray-200'>
           {/**side Menu */}
           <SideBar />
           {/**Main Content */}

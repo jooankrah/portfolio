@@ -11,7 +11,7 @@ import {
 
 export default function SideBar() {
   return (
-    <div className=' left-0 w-12 border-[#102a44] bg-[#001122] pr-4 lg:w-14'>
+    <div className='sticky top-10 left-0 z-10 w-12 border-[#102a44] bg-[#001122] pr-4 lg:w-14'>
       <div className='flex flex-col items-start justify-center'>
         <div className='border-l-2 border-l-slate-200 p-3'>
           <VscFiles className='h-6 w-6 cursor-pointer text-white' />

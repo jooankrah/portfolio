@@ -12,7 +12,7 @@ import 'react-tabs/style/react-tabs.css';
 export default function MainContent() {
   return (
     <Tabs className=''>
-      <TabList className='flex flex-grow items-center bg-[#061852] text-white shadow-md shadow-dark'>
+      <TabList className='sticky top-10 z-10 flex flex-grow items-center bg-[#061852] text-white shadow-sm shadow-gray-500'>
         <Tab className='cursor-pointer !rounded-none border-r-[0.5px] border-r-gray-700 bg-[#061852] px-10 py-2 text-sm lowercase'>
           Home.html
         </Tab>
@@ -31,7 +31,7 @@ export default function MainContent() {
       </TabList>
 
       <TabPanel className='bg-black'>
-        <div className=' flex h-screen flex-col items-center justify-center space-y-6 p-4'>
+        <div className=' flex h-full flex-col items-center justify-center space-y-6 p-4'>
           <Fade left ssrFadeout>
             <div className='relative h-[300px] w-[300px] rounded-full'>
               <Image
@@ -46,8 +46,8 @@ export default function MainContent() {
           <div className='z-10'>
             <Typist
               className='TypistExample-header'
-              //avgTypingDelay={150}
-              startDelay={1000}
+              avgTypingDelay={200}
+              startDelay={1500}
               //  onTypingDone={this.onHeaderTyped}
             >
               <h4 className='text-center font-custom text-7xl capitalize text-gray-300'>
@@ -64,9 +64,9 @@ export default function MainContent() {
                   </p>
                 </div>
                 <div className='mt-5 flex items-center justify-center space-x-4'>
-                  <GrFacebook className='h-6 w-6 cursor-pointer text-gray-300' />
-                  <GrInstagram className='h-6 w-6 cursor-pointer text-gray-300' />
-                  <GrLinkedin className='h-6 w-6 cursor-pointer text-gray-300' />
+                  <GrFacebook className='h-6 w-6 cursor-pointer text-gray-300 transition-all duration-300 ease-in-out hover:scale-110 hover:text-blue-500' />
+                  <GrInstagram className='h-6 w-6 cursor-pointer text-gray-300 transition-all duration-300 ease-in-out hover:scale-110 hover:text-blue-500' />
+                  <GrLinkedin className='h-6 w-6 cursor-pointer text-gray-300 transition-all duration-300 ease-in-out hover:scale-110 hover:text-blue-500' />
                 </div>
               </div>
             </Fade>
@@ -74,7 +74,7 @@ export default function MainContent() {
         </div>
       </TabPanel>
       <TabPanel className='bg-[#132766]'>
-        <div className='mx-auto flex h-screen max-w-5xl justify-around space-x-16 p-4 pt-12'>
+        <div className='mx-auto flex max-w-5xl justify-around space-x-16 p-4 pt-12'>
           <Fade left ssrFadeout>
             <div className='relative h-32 w-32'>
               <Image
